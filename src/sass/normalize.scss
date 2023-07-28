@@ -2,11 +2,12 @@ html,
 body {
 	font-family: 'Poppins', sans-serif;
 	background-color: #fff;
-	color: #fff;
+	color: #000;
 	background-color: rgb(177, 76, 76);
 }
 
 .wrapper {
+	position: relative;
 	min-height: 100%;
 	width: 100%;
 	overflow: hidden;

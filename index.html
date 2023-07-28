@@ -5,16 +5,45 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<script type="module" src="/main.js" defer></script>
-	<title>Quizlet-app</title>
+	<title>Pomodoro-app</title>
 </head>
 
 <body>
 	<div class="wrapper">
+		<div class="popup">
+			<div class="popup__border"></div>
+			<div class="popup-settings">
+				<div class="session">
+					<h2 class="session__title">Время сессии</h2>
+					<div class="session__time">
+						<button class="session__time-minus">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+								width="35" height="35" id="minus">
+								<path fill="#fff" d="M19,11H5a1,1,0,0,0,0,2H19a1,1,0,0,0,0-2Z">
+								</path>
+							</svg>
+						</button>
+						<div class="session__time-box">
+							<span>10</span>
+							мин
+						</div>
+						<button class="session__time-plus">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+								width="35" height="35" id="plus">
+								<path fill="#fff"
+									d="M19,11H13V5a1,1,0,0,0-2,0v6H5a1,1,0,0,0,0,2h6v6a1,1,0,0,0,2,0V13h6a1,1,0,0,0,0-2Z">
+								</path>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
 		<header class="header">
 			<div class="container">
 				<div class="header__content">
-					<h1 class="header__title">Помидоровый-таймер</h1>
-					<button class="header__settings">Настройки</button>
+					<h1 class="header__title">Помидоровый таймер</h1>
+					<button class="header__btn-settings btn">Настройки</button>
 				</div>
 		</header>
 		<main class="main">
