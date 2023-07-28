@@ -5,7 +5,7 @@
 .popup {
 	position: fixed;
 	bottom: 0;
-	right: 0px;
+	right: -500px;
 	width: 500px;
 	height: 100%;
 	background-color: #fff;
@@ -21,21 +21,37 @@
 	}
 	&-settings {
 		padding: 30px 25px;
-	}
-	.session {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		font-size: 20px;
-		&__time {
+		.setting-box {
 			display: flex;
 			align-items: center;
-			gap: 15px;
-			&-box {
-				border: 1px solid #fff;
-				padding: 10px 20px;
-				border-radius: 20px;
+			justify-content: space-between;
+			font-size: 20px;
+			.time {
+				display: flex;
+				align-items: center;
+				gap: 15px;
+				&-box {
+					border: 1px solid #fff;
+					padding: 10px 20px;
+					border-radius: 10px;
+				}
 			}
+			.title {
+				color: #fff;
+			}
+			.time {
+				color: #fff;
+			}
+		}
+		.session,
+		.short-break {
+			margin-bottom: 20px;
+		}
+		.long-break {
+			margin-bottom: 50px;
+		}
+		.by-round {
+			margin-bottom: 20px;
 		}
 	}
 }
